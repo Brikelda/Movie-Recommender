@@ -7,7 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 movies = pd.read_csv("ml-25m/movies.csv")
-# print(movies)
+#print(movies)
 
 def clean_title(title):
    title = re.sub("[^a-zA-Z0-9 ]", "",title)
@@ -29,7 +29,7 @@ def search(title):
    results = movies.iloc[indices][::-1]
    return results
 
-
+#otr
 ratings = pd.read_csv("ml-25m/ratings.csv")
 
 def find_similar_movies(movie_id):
